@@ -177,9 +177,10 @@ function buildMdastNode(
   if (customNode != null) {
     return customNode as any;
   }
+  console.log("PLUGIN LOG HERE");
 
   switch (node.type) {
-    case "p":
+    case "paragraph":
       return buildParagraph(node, overrides);
     case "heading":
       return buildHeading(node, overrides);
