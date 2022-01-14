@@ -179,7 +179,7 @@ function buildMdastNode(
   }
 
   switch (node.type) {
-    case "paragraph":
+    case "p":
       return buildParagraph(node, overrides);
     case "heading":
       return buildHeading(node, overrides);
